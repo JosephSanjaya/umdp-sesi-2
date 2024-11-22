@@ -1,0 +1,11 @@
+<resources>
+    <color name="primaryColor">#FF383E2F</color>
+    <color name="primaryDisabledColor">#FFB0A0A0</color>
+    <color name="secondaryColor">#FF8A6F51</color>
+    <color name="defaultBackgroundColor">#FFF9F6ED</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="black">#FF000000</color>
+    <color name="primaryAltColor">#FF979797</color>
+    <color name="divider">#FFE4E4E4</color>
+    <color name="gettingDarker">#979797</color>
+</resources>

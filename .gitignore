@@ -41,3 +41,9 @@ app.*.map.json
 /android/app/debug
 /android/app/profile
 /android/app/release
+/lib/gen/assets.gen.dart
+/lib/gen/colors.gen.dart
+/lib/entities/cat_data.freezed.dart
+/lib/entities/cat_data.g.dart
+/lib/data/cat_remote_client.g.dart
+/lib/presentation/home/home_state.freezed.dart
