@@ -4,6 +4,10 @@ import 'package:umpdsesi2/presentation/utils/Translation.dart';
 import '../../entities/cat_data.dart';
 import '../../gen/assets.gen.dart';
 import 'home_viewmodel.dart';
+import 'package:flutter/material.dart';
+import 'package:get/get.dart';
+import 'package:cached_network_image/cached_network_image.dart';
+import 'home_viewmodel.dart';
 
 class HomeScreen extends GetView<HomeViewModel> {
   const HomeScreen({super.key});
@@ -71,8 +75,8 @@ class HomeScreen extends GetView<HomeViewModel> {
       margin: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
       child: ListTile(
         leading: CircleAvatar(
-          backgroundColor: Colors.amber,
-          child: Text('${index + 1}'),
+          backgroundImage: CachedNetworkImageProvider(catFact.imageUrl.toString()),
+          backgroundColor: Colors.grey[200],
         ),
         title: Text(catFact.data.first), // Display the cat fact
         subtitle: Text(Translation.subtitleKey.tr),

@@ -39,6 +39,7 @@ dependencies:
   retrofit: ^4.4.0
   logger: ^2.4.0
   dio:
+  cached_network_image:
 
 
   # The following adds the Cupertino Icons font to your application.

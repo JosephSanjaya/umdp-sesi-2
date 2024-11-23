@@ -7,6 +7,7 @@ part 'cat_data.g.dart';
 class CatData with _$CatData {
   const factory CatData({
     required List<String> data,
+    String? imageUrl,
   }) = _CatData;
 
   factory CatData.fromJson(Map<String, dynamic> json) => _$CatDataFromJson(json);
