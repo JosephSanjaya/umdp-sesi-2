@@ -3,6 +3,7 @@ import 'package:get/get.dart';
 import 'package:get_storage/get_storage.dart';
 import 'package:umpdsesi2/presentation/home/home_bindings.dart';
 import 'package:umpdsesi2/presentation/home/home_screen.dart';
+import 'package:umpdsesi2/presentation/utils/Translation.dart';
 import 'util.dart';
 import 'theme.dart';
 
@@ -27,7 +28,9 @@ class MyApp extends StatelessWidget {
 
     MaterialTheme theme = MaterialTheme(textTheme);
     return GetMaterialApp(
-      title: "Flutter Demo",
+      translations: Translation(),
+      title: "Cat Facts",
+      locale: const Locale("id"),
       initialBinding: HomeBindings(),
       theme: brightness == Brightness.light ? theme.light() : theme.dark(),
       home: const HomeScreen(),

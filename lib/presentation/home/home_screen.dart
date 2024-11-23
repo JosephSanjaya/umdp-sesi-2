@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:umpdsesi2/presentation/utils/Translation.dart';
 import '../../entities/cat_data.dart';
 import '../../gen/assets.gen.dart';
 import 'home_viewmodel.dart';
@@ -17,7 +18,7 @@ class HomeScreen extends GetView<HomeViewModel> {
           ? null // No app bar when using SliverList
           : AppBar(
         backgroundColor: Theme.of(context).colorScheme.inversePrimary,
-        title: const Text("Cat Facts"),
+        title: Text(Translation.titleKey.tr),
       ),
       body: useSliverList
           ? _buildSliverList(context)
@@ -39,7 +40,7 @@ class HomeScreen extends GetView<HomeViewModel> {
           pinned: true,
           flexibleSpace: FlexibleSpaceBar(
             background: Assets.lib.assets.kitty.image(fit: BoxFit.cover),
-            title: const Text('Cat Facts'),
+            title: Text(Translation.titleKey.tr),
           ),
         ),
         SliverList(
@@ -74,7 +75,7 @@ class HomeScreen extends GetView<HomeViewModel> {
           child: Text('${index + 1}'),
         ),
         title: Text(catFact.data.first), // Display the cat fact
-        subtitle: const Text("A fun fact about cats!"),
+        subtitle: Text(Translation.subtitleKey.tr),
         trailing: const Icon(Icons.pets),
       ),
     );
