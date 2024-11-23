@@ -1,5 +1,5 @@
 import 'package:get/get.dart';
-import '../../domain/CatFactUseCase.dart';
+import '../../domain/cat_fact_use_case.dart';
 import '../../entities/cat_data.dart';
 import 'home_state.dart';
 
@@ -19,11 +19,7 @@ class HomeViewModel extends GetxController {
 
   Future<void> fetchCatFacts() async {
     try {
-      final List<CatData> facts = [];
-      for (int i = 0; i < 10; i++) { // Fetch 10 facts for demonstration
-        final catFact = await useCase.getCatFact();
-        facts.add(catFact);
-      }
+      final facts = await useCase.fetchCatFacts();
       _state.value = _state.value.copyWith(catFacts: facts);
     } catch (e) {
       print("Error fetching cat facts: $e");
