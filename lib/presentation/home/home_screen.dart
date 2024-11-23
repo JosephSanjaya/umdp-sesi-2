@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:umpdsesi2/presentation/utils/Translation.dart';
+import 'package:umpdsesi2/presentation/utils/translation.dart';
 import '../../entities/cat_data.dart';
 import '../../gen/assets.gen.dart';
 import 'home_viewmodel.dart';

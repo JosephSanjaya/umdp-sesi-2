@@ -5,7 +5,7 @@ import 'package:hive/hive.dart';
 import 'package:hive_flutter/adapters.dart';
 import 'package:umpdsesi2/presentation/home/home_bindings.dart';
 import 'package:umpdsesi2/presentation/home/home_screen.dart';
-import 'package:umpdsesi2/presentation/utils/Translation.dart';
+import 'package:umpdsesi2/presentation/utils/translation.dart';
 import 'entities/cat_data.dart';
 import 'util.dart';
 import 'theme.dart';

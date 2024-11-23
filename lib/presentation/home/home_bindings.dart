@@ -4,6 +4,7 @@ import 'package:umpdsesi2/data/cat_local_datasource.dart';
 import 'package:umpdsesi2/data/cat_remote_client.dart';
 import 'package:umpdsesi2/domain/cat_fact_use_case.dart';
 import 'package:umpdsesi2/presentation/home/home_viewmodel.dart';
+import 'package:umpdsesi2/presentation/utils/workmanager_initializer.dart';
 
 class HomeBindings extends Bindings {
   @override
@@ -16,5 +17,7 @@ class HomeBindings extends Bindings {
     Get.lazyPut(() =>
         CatFactUseCase(apiClient: Get.find(), localDataSource: Get.find()));
     Get.lazyPut(() => HomeViewModel(Get.find()));
+
+    WorkmanagerInitializer.initialize();
   }
 }
